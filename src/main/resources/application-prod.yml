@@ -3,17 +3,3 @@ spring:
         url: jdbc:mysql://192.168.96.214:3306/datacenter?useSSL=false
         username: datacenter
         password: P@ssw0rd
-
-auth:
-    users:
-        - openId: '001'
-          name: '张三'
-          role: 'op'
-          permission:
-              - 'menu_1'
-              - 'menu_2'
-        - openId: '002'
-          name: '李四'
-          role: 'user'
-          permission:
-              - 'menu_1'
