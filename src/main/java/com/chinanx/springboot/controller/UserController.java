@@ -18,7 +18,7 @@ public class UserController {
 
     @RequestMapping("/")
     public String home() {
-        return "hello";
+        return "index";
     }
     
     @ResponseBody

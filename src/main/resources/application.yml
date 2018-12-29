@@ -12,6 +12,8 @@ logging:
         web: DEBUG
 
 spring:
+    application:
+        name: spring-boot-scaffold
     jackson:
         default-property-inclusion: non_null
     mvc:

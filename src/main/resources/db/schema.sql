@@ -1,3 +1,4 @@
+drop table if exists sys_user;
 create table sys_user
 (
    id integer not null,
@@ -7,6 +8,7 @@ create table sys_user
    primary key(id)
 );
 
+drop table if exists sys_role;
 create table sys_role
 (
    id integer not null,
@@ -14,6 +16,7 @@ create table sys_role
    primary key(id)
 );
 
+drop table if exists sys_r_user_role;
 create table sys_r_user_role
 (
    id integer not null,
@@ -22,7 +25,8 @@ create table sys_r_user_role
    primary key(id)
 );
 
-create sequence seq_forum_comment
+drop sequence if exists seq_common;
+create sequence seq_common
    START WITH 10000
    INCREMENT BY 1
    NOCACHE
